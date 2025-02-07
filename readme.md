@@ -50,7 +50,7 @@ pip install transformers torch pandas scikit-learn matplotlib wordcloud jieba op
 ```
 
 ## 使用方法
-## 1. 数据预处理
+### 1. 数据预处理
 运行 `Wordcloud_Shop_sentiment.py` 进行数据清洗、分词、停用词去除，并生成词云和折线图：
 ```bash
 python data_preprocessing.py
@@ -65,7 +65,7 @@ clean_data.xlsx（清洗后的数据）
 
 sentiment_trend.png（情感趋势折线图）
 
-## 2.训练 SVM 模型
+### 2.训练 SVM 模型
 运行 `SVM_analysis.py` 训练 SVM 模型，并在验证集上评估模型效果
 ```bash
 python SVM_analysis.py
@@ -79,7 +79,7 @@ python SVM_analysis.py
 
 test_with_predictions.xlsx（SVM 对 test.xlsx 进行情感预测的结果）
 
-## 3.训练 BERT 模型
+### 3.训练 BERT 模型
 
 运行 `BERT.py` 训练 BERT 模型，并在验证集上评估模型：
 ```bash
@@ -93,18 +93,18 @@ python BERT.py
 `test_with_predictions_bert.xlsx`（BERT 对 test.xlsx 进行情感预测的结果）
 
 ## 结果分析
-#1. 词云分析
+###1. 词云分析
 `positive_wordcloud.png` 显示了正向评论中出现频率最高的词。
 
 `negative_wordcloud.png` 显示了负向评论中出现频率最高的词，有助于分析用户的不满点。
 
-#2.情感趋势分析
+###2.情感趋势分析
 `sentiment_trend.png` 展示了不同时间段的正负面评价数量变化趋势。
 
-#3.模型评估
+###3.模型评估
 `evaluation_metrics.png` 展示了模型的准确率、分类报告和误差信息，便于比较 SVM 和 BERT 的效果。
 
-#4.测试数据预测
+###4.测试数据预测
 `SVM_test_with_predictions.xlsx（SVM）`和 `BERT_test_with_predictions.xlsx（BERT）`存储了测试数据的情感预测结果，方便后续业务分析。
 
 ## 项目改进方向
