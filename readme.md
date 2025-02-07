@@ -93,18 +93,18 @@ python BERT.py
 `test_with_predictions_bert.xlsx`（BERT 对 test.xlsx 进行情感预测的结果）
 
 ## 结果分析
-###1. 词云分析
+### 1. 词云分析
 `positive_wordcloud.png` 显示了正向评论中出现频率最高的词。
 
 `negative_wordcloud.png` 显示了负向评论中出现频率最高的词，有助于分析用户的不满点。
 
-###2.情感趋势分析
+### 2.情感趋势分析
 `sentiment_trend.png` 展示了不同时间段的正负面评价数量变化趋势。
 
-###3.模型评估
+### 3.模型评估
 `evaluation_metrics.png` 展示了模型的准确率、分类报告和误差信息，便于比较 SVM 和 BERT 的效果。
 
-###4.测试数据预测
+### 4.测试数据预测
 `SVM_test_with_predictions.xlsx（SVM）`和 `BERT_test_with_predictions.xlsx（BERT）`存储了测试数据的情感预测结果，方便后续业务分析。
 
 ## 项目改进方向
